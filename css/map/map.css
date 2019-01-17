@@ -1,0 +1,187 @@
+#map {
+    width:100%;
+    height: 100%;
+ }
+#mapRight{
+    width:240px;
+    height:100%;
+    position:fixed;
+    right:0;
+    top:0;
+    z-index: 600;
+    background:rgba(43,51,70, 0.8)
+}
+.rightlist{
+    width:100%;
+    height:100%;
+    overflow: auto;   
+}
+.rightlist_blank{
+    display:block;width:100%;height:8px
+}
+.right_title{
+    width:100%;
+    height:48px;
+    line-height: 48px;
+    font-size: 14px;
+    background:#EFAF49;
+}
+.right_title p{
+    display:inline-block;
+    width:170px;
+    height:48px;
+    text-indent: 24px;
+    font-size: 16px;
+}
+.rightlist li{
+    width:100%;
+    height:60px;
+    color:#fff;
+    border-bottom: 1px solid #2e394b70;
+}
+.online_name{
+    width:100%;
+    height:30px;
+    padding:10px 0 0 36px;
+    font-size:14px;
+    box-sizing: border-box;
+    background:url(../../img/map/online.png) no-repeat 16px bottom;
+    background-size:16px 16px;
+}
+.offline_name{
+    width:100%;
+    height:30px;
+    padding:10px 0 0 36px;
+    font-size:14px;
+    box-sizing: border-box;
+    background:url(../../img/map/offline.png) no-repeat 16px bottom;
+    background-size:16px 16px;
+}
+.online_name span,.offline_name span{
+    float:right;
+    width:40px;
+    height:20px;
+    font-size: 12px;
+}
+.online_phone{
+	width:100%;
+    height:30px;
+    padding:4px 0 0 20px;
+    font-size:12px;
+    box-sizing: border-box;
+    color:#CACEDA;
+}
+.online_phone p {
+	display:inline-block;
+	width:100px;
+	height:20px;
+}
+.online_phone span{
+	/*float:right;*/
+	display:inline-block;
+	border-left:1px solid #2e394b70;
+	margin-top:4px;
+    width:100px;
+    height:15px;
+    font-size: 12px;
+    padding-left:16px;
+}
+/* 弹出框的背景颜色 */
+.leaflet-popup-content-wrapper {
+	background-color: transparent;
+}
+/* 弹出框下半部分的背景颜色 */
+.leaflet-popup-tip {
+	background-color: none;
+	width: 5px;
+	height:12px;
+}
+/*.leaflet-popup-2 {
+	background-color: red !important;
+} */
+/* 弹出框叉叉X */
+.leaflet-popup-close-button {
+	display: none;
+}
+.leaflet-popup-content {
+	border-radius: 0px !important;
+	margin: 0;
+	
+} 
+.popup-green {
+	
+}
+/* 表格页 */
+.popup-red {
+	width: 100%;
+	height: 100%;
+}
+ .add {
+	width: 215px;
+	height: 140px;
+	background-color: yellow; 
+	border-radius: 5px; 
+	margin: 0 auto;
+}
+.add-1 {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid gray;
+}
+.add-1:last-child {
+	border-bottom: 0;
+}
+.add-1>span {
+	display: inline-block;
+	float: right;
+	width: 150px;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+	font-size: 14px;
+}
+.add-1>span:first-child {
+	width: 50px;
+	float: left !important;
+	border-right: 1px solid gray;
+	color: #997900;
+}
+.add-1>span:nth-child(2) {
+	text-align: left !important;
+}
+.add-input {
+	/* width: 100px; */
+}
+.add-btn {
+	width: 	50px;
+	text-align: center;
+	margin-left:5px;
+	cursor: pointer;
+}
+.selects {
+	height: 21px;
+	outline: none;
+}
+.add-3 {
+	height: 60px;
+}
+.add-3>span:nth-child(2) {
+	line-height: 20px !important;
+}
+.wrong {
+	animation: myfirst 1s infinite;
+}
+@keyframes myfirst {
+	0%{opacity: 1;}
+	20%{opacity: 0.3;}
+	50%{opacity: 0.5;}
+	70%{opacity: 0.7;}
+	100%{opacity: 1;}
+	70%{opacity: 0.7;}
+	50%{opacity: 0.5;}
+	20%{opacity: 0.3;}
+	0%{opacity: 1;}	
+}
+
+

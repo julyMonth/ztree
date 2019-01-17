@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>角色列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/role/roleList.css"/>
+		<link rel="stylesheet" type="text/css" href="../layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="../ztree/zTreeStyle.css"/>
+	</head>
+	<body>
+		<div id="addMask">
+			<div class="addMaskBox">
+				<p>提示信息</p>
+				<span class="close">x</span>
+				<div class="delBtnBox">
+					<div class="delMsg">
+						确认删除角色信息
+					</div>
+					<div class="delBtn">
+						<button class="delBtnConfirm" data-type="reload">确认</button>
+					    <button class="delBtnConcel">取消</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div id="roleListBox">
+			<h2>角色列表</h2>
+			<div id="roleListSearch">
+				<div class="roleListTop" >
+					<input type="search" placeholder="输入用户昵称/用户账号" class="topSearch" />
+					<button class="topRoleSearch" data-type="reload">查询</button>
+					<button class="topAddRole">增加角色</button>
+					<button class="topDelRole" >Delect</button>	
+				</div>
+				<div class="roleListTable">
+					<table class="layui-hide" id="addRole" lay-filter="addRole" ></table>
+				</div>	
+			</div>
+		</div>
+		<!-- 点击新增角色的弹框 -->
+		<div class="addNewRole">
+			<div class="roleFrame">
+				<div class="roleTitle">新增角色</div>
+				<div class="roleName">
+					<label>角色名称 : <input type="text" /></label>
+					<span>请输入角色名称</span>
+				</div>
+				<div class="roleDescription">
+					<label>角色描述 : <input type="text" /></label>
+					<span>请输入角色描述</span>
+				</div>
+				<div class="addNewRoleBtn">
+						<button type="button" class="newRoleConfirm" data-type="reload">确认</button>
+						<button type="button" class="newRoleCancel">取消</button>
+				</div>
+			</div>
+		</div>
+		<!-- 点击列表后显示已拥有的权限---框 -->
+		<div class="roleBelongs">
+			 <div class="rTitle">已拥有的权限</div>
+			 <div class="rList">
+				 <ul class="allMenu">
+				 	
+				 </ul>
+			 </div>
+		</div>
+		<!-- 点击修改按钮后的弹框 -->
+		<div class="modifyRoleBox">
+			<div class="mask">
+				<div class="modifyTopBox">
+					<div class="modifyTopTitle">用户信息修改</div>
+					<div class="topRoleMsg">
+						<div class="modifyMsg">
+							<label>用户名称 : 
+								<input type="text" class="modifyRoleName" required />
+							</label>
+							<label class="gap ">用户描述 : 
+								<input type="text" class="modifyRoleDes" required/>
+							</label>
+							<input type="text" id="rid" value=""/>
+						</div>
+					</div>
+					<div class="tips">
+						<span class="tipName">*用户名称为空</span>
+						<span class="tipDes">*用户描述为空</span>
+					</div>
+					<div class="roleBox">
+						<div id="treeDemo"></div>
+					</div>
+				</div>
+				<div class="btns">
+					<button class="confirm">确认</button>
+					<button class="cancel">取消</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../layui/layui.all.js"></script>
+    <script type="text/html" id="barDemo">
+		  <a class="layui-btn layui-btn-danger layui-btn-xs" id="modify" lay-event="modify" >修改</a>
+	</script>
+	<script type="text/javascript" src="../ztree/jquery.ztree.core.js"></script>
+	<script type="text/javascript" src="../ztree/jquery.ztree.excheck.js"></script>
+    <script type="text/javascript" src="../js/role/roleList.js"></script>
+    
+</html>

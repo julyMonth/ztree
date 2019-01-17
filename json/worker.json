@@ -1,0 +1,50 @@
+{	"online":3,
+    "offline":4,
+    "code": 0,
+    "msg": "数据请求成功",
+    "count": 7,
+    "data":[
+        {
+		    "name":"小李",
+		    "status":0,
+		    "number":"12345655554",
+		    "group":"第一小组"
+		},
+		{
+		    "name":"小周",
+		    "status":1,
+		    "number":"12345655554",
+		    "group":"第一小组"
+		},
+		{
+		    "name":"小张",
+		    "status":1,
+		    "number":"12345655554",
+		    "group":"第一小组"
+		},
+		{
+		    "name":"小王",
+		    "status":0,
+		    "number":"12345655554",
+		    "group":"第二小组"
+		},
+		{
+		    "name":"小路",
+		    "status":0,
+		    "number":"12345655554",
+		    "group":"第一小组"
+		},
+		{
+		    "name":"小刘",
+		    "status":1,
+		    "number":"12345655554",
+		    "group":"第二小组"
+		},
+		{
+		    "name":"小三",
+		    "status":0,
+		    "number":"12345655554",
+		    "group":"第一小组"
+		} 
+    ]
+}

@@ -1,0 +1,73 @@
+.tit {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #ECECEC; 
+}
+#main {
+	width: calc(100% - 40px);
+	height: 100%;
+	padding: 0 20px; 
+}
+.top {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #ECECEC;
+}
+.btn {
+	height: 35px;
+	padding: 5px 12px;
+	border-radius: 4px;
+	font-size: 16px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+.btn:active {
+	height: 33px;
+	color: white;
+	border-radius: 4px;
+	opacity: 0.5;
+}
+.inp {
+	font-size: 15px;
+	height: 35px;
+	padding: 0px 10px;
+	border-radius: 4px;
+	/*border: none; 
+	border: 1px solid #DADADA; */
+	color: gray;
+}
+.btn1 {
+	background-color: #327AB7;
+}
+.btn2 {
+	background-color: #5CB95C;
+}
+.btn3 {
+	background-color: #DA524E;
+}
+.bot {
+	width: 100%;
+	height: calc(100% - 192px);
+	padding: 15px 0px;
+	overflow: hidden;
+}
+.layui-table-box {
+	max-height: 700px !important;
+}
+.layui-layer-dialog{
+	width: 800px !important;
+}
+.alt {
+	display: inline-block;
+	width: 120px;
+	height: 25px;
+	/* background-color: gray; */
+	margin-right: 5px;
+}
+.alt>input {
+	width: 20px;
+}

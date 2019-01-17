@@ -1,0 +1,26 @@
+{
+	"status": "200",
+	"message": "搜索到用户角色信息",
+	"data": {
+		"total": 12,
+		"list": [
+			{
+				"id": 110,
+				"username": "管理员",
+				"decisions": "1212"
+			}, {
+				"id": "1sdsds",
+				"username": "用户中心",
+				"decisions": "131"
+			}, {
+				"id": "10982",
+				"username": "权限管理",
+				"decisions": "87446"
+			}, {
+				"id": "10983",
+				"username": "test",
+				"decisions": "123"
+			}
+		]
+	}
+}

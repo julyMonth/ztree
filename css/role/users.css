@@ -1,0 +1,555 @@
+#roleBox{
+	width:100%;
+	height:100%;
+	min-width: 1600px;
+	/*background:gray;*/
+	padding:0 240px 0 160px;
+	box-sizing: border-box;
+}
+h2{
+	width:100%;
+	height:80px;
+	/*background:blue;*/
+	font-size: 26px;
+	line-height:80px ;
+	border-bottom:1px solid #EFEFEF;
+	box-sizing: border-box;
+}
+
+#roleSearch{
+	width:100%;
+	height:calc(100% - 81px);
+	/*background:#DFF0D8;*/
+}
+.roleTop{
+  width:100%;
+	height:80px;
+	padding:20px 0;
+	box-sizing: border-box;
+}
+.search{
+	height:40px;
+	width:200px;
+	border-radius: 5px;
+	padding:0 10px;
+	border:1px solid #CDCCCE;
+	outline: none;
+	box-sizing: border-box;
+}
+.roleSearch{
+	background:#327AB7;
+	display: inline-block;
+	height:40px;
+	width:60px;
+	border-radius: 5px;
+	color:#fff;
+}
+.delRole{
+	background:#D9524E;
+	display: inline-block;
+	height:40px;
+	width:120px;
+	border-radius: 5px;
+	color:#fff;
+	outline: none;
+}
+.addRole{
+	background:#5CB95C;
+	display: inline-block;
+	height:40px;
+	width:120px;
+	border-radius: 5px;
+	color:#fff;
+	outline: none;
+}
+.roleTable{
+	width:100%;
+	height:calc(100% - 80px);
+	/*background:red;*/
+}
+/**********************点击delect按钮后的弹框**********************/
+#delRole{
+	width:100%;
+	height:100%;
+	background:rgba(40,43,51,0.4);
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 300!important;
+	display: none;
+}
+.delRoleBox{
+	width:300px;
+	height:180px;
+	position: absolute;
+	top:calc(50% - 90px);
+	left: calc(50% - 150px);
+	color:black;
+}
+#delRole p{
+	height:30px;
+	width:100%;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	background:#EAE5E5;
+	
+}
+#delRole span{
+	position:absolute;
+	top:6px;
+	right:6px;
+	width:20px;
+	height:20px;
+	text-align: center;	
+	border:1px solid lightgray;
+	cursor: pointer;
+}
+.delMsg{
+	width:calc(100% - 60px);
+	height:70px;
+	padding:20px 30px;
+	font-size: 16px;
+	background: #fff;
+}
+.delBtn{
+	height:40px;
+	width:100%;
+	text-align: center;
+	background:#fff;
+	border-top:1px solid #EAE5E5;
+}
+.delBtn button{
+	display: inline-block;
+	width:60px;
+	height:30px;
+  margin:3px 10px;
+  color:#fff; 
+}
+.delBtnConfirm{
+	background: #1E9FFF;
+	cursor: pointer;
+}
+.delBtnConcel{
+	background:lightslategray;
+	cursor: pointer;
+}
+/**********************点击选择角色后的弹框**********************/
+.mask{
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.3);
+	position:fixed;
+	z-index: 200!important;
+	display:none;
+}
+#mask{
+	position:relative;
+	left:calc(50% - 400px);
+	top:calc(50% - 300px);
+	width:800px;
+	height:663px;
+	border:1px solid #E6E6E6;
+}
+.checkBox{
+	background:#fff;
+	}
+	/*弹框的标题*/
+.checkTitle{
+	height:40px;
+	width:100%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+	background:#F8F8F8;
+	border-bottom:1px solid #EEEEEE;
+}
+/*弹框中的input框*/
+.modifyRoleMsg{
+	height:60px;
+	width:100%;
+	/*background: red;*/
+	box-sizing: border-box;
+}
+.modify{
+	height:60px;
+	line-height: 40px;
+	padding:18px 40px 0 60px;
+	/* background:red; */
+	box-sizing: border-box;
+	position:relative;
+}
+.modify label{
+	display:inline-block;
+	height:40px;
+	width:230px;
+	font-size: 14px;
+}
+.modify input{
+	display:inline-block;
+	width:120px;
+	height:30px;
+	border-radius: 5px;
+	border:1px solid dimgray;
+	padding:0 8px;
+}
+.modifyStatus{
+	width:120px;
+	height:30px;
+	border-radius: 5px;
+	border:1px solid dimgray;
+}
+#uid{
+	display:none;
+}
+.tips{
+	height:20px;
+	width:100%;
+	/*background:pink;*/
+	position: relative;
+}
+.tips span{
+	font-size: 12px;
+	position:absolute;
+	color:red;
+}
+.tipName{
+	left:176px;
+	top:0;
+	/*background:green;*/
+	display: none;
+}
+.tipDes{
+	left:410px;
+	top:0;
+	/*background:blue;*/
+	display: none;
+}
+.title{
+	width:100%;
+	height:20px;
+	font-size: 14px;
+	font-weight: 500;
+	padding:4px 0  4px 0;
+	margin-bottom:4px;
+	background: lightgray;
+}
+.title >div{
+	width:50%;
+	height:100%;
+	line-height:20px ;
+	text-align:center;
+	float:left;
+}
+
+.checkLine{
+	width:100%;
+	height:460px;
+	background:#fff;
+	padding:0 30px 8px 30px;
+	box-sizing: border-box;
+	display: auto;
+}
+.checkLine>div{
+	float:left;
+}
+.checkLeft,.checkRight,#select1,#select2{
+	/* background:#1E9FFF; */
+	width:45%;
+	height:100%;
+	box-sizing: border-box;
+}
+#select1,#select2{
+	width:100%;
+	height:100%;
+	border:1px solid #A9A9A9!important;
+	padding:16px 0 16px 30px;
+	box-sizing: border-box;
+}
+.checkLeft label,.checkRight label{
+	display: inline-block;
+	width:40%;
+	height:30px;
+	font-size: 16px;
+	margin-right:8px;
+}
+.ckeckCenter{
+	/* background:red; */
+	width:10%;
+	height:100%;
+	padding:21% 0 0 6px;
+	box-sizing: border-box;
+}
+.ckeckCenter button{
+	display: inline-block;
+	width:90%;
+	height:36px;
+	border:1px solid lightgray;
+	margin:4px 0;
+}
+.ckeckCenter button:active{
+	background:lightgray;
+}
+.btns{
+	width:100%;
+	height:50px;
+	padding:10px 30px;
+	box-sizing: border-box;
+	background:#fff;
+	text-align: right;
+}
+.btns button{
+	display: inline-block;
+	width:56px;
+	height:30px;
+	border-radius: 2px;
+    font-weight: 400;
+	outline: none;
+}
+.confirm{
+    border:none;
+    background:#1E9FFF;
+    color:#fff;
+    margin-right:10px;
+}
+.confirm:hover{
+    opacity: .9;
+    }
+.cancel{
+    border:1px solid #DEDEDE;
+    background:#fff;
+}
+/********************** 新增角色的弹框 **********************/
+.addRoleFrame{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.3);
+	position:fixed;
+	left:0;
+	top:0;
+	z-index: 300!important;
+	display:none;
+}
+.frame{
+	position:relative;
+	left:calc(50% - 200px);
+	top:calc(50% - 145px);
+	width:400px;
+	height:290px;
+	border:1px solid #E6E6E6;
+	background:#fff;
+	
+}
+.frame >div{
+	width:100%;
+}
+.addRoleTitle{
+	height:40px;
+	font-size: 16px;
+	line-height: 40px;
+	text-align:center;
+	font-weight: bolder;
+	background-color:#F2F2F2;
+}
+.name{
+	height:60px;
+	line-height: 40px;
+	padding:20px 0 0 50px;
+	/* background:red; */
+	box-sizing: border-box;
+	position:relative;
+}
+.common{
+	height:40px;
+	line-height: 40px;
+	padding:0 0 0 50px;
+	/* background:red; */
+	box-sizing: border-box;
+	position:relative;
+}
+.frame label{
+	display:inline-block;
+	height:40px;
+	width:100%;
+	font-size: 14px;
+	/* font-weight: bolder; */
+}
+.frame input{
+	display:inline-block;
+	width:180px;
+	height:30px;
+	border-radius: 5px;
+	/* outline: none;*/
+	border:1px solid #DDDDDD;
+	padding:0 8px;
+}
+.frame span{
+	height:20px;
+	position:absolute;
+	bottom: 20px;
+  right: 11px;
+	color:red;
+	display:none;
+}
+.common span{
+	height:20px;
+	position:absolute;
+	bottom: 21px;
+  right: 24px;
+	color:red;
+	display:none;
+}
+.addBtn{
+	height:50px;
+	padding-top:20px;
+	text-align: center;
+}
+.addBtn button{
+	display:inline-block;
+	width:60px;
+	height:36px;
+	margin:0 15px;
+	outline: none;
+	border:1px solid #DEDEDE
+}
+.addBtn button:active{
+	opacity: .8;
+}
+.addConfirm{
+	background:#1E9FFF;
+	color:#fff;
+}
+
+
+/* 点击列表后出现的已拥有权限框 */
+.belongs{
+	width:240px;
+	height:658px;
+	position: absolute;
+	left:1080px;
+	top:160px;
+	/* background:red; */
+	border:1px solid #E6E6E6;
+	display:none;
+	}
+	.bTitle{
+		height:40px;
+		line-height: 40px;
+		width:100%;
+		color:#666666;
+		background:#F2F2F2;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bolder;
+	}
+	.bList{
+		width:100%;
+		height:620px;
+	}
+	.allMenu {
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	list-style-type: none;
+	overflow: auto;
+	/* counter-reset:sectioncounter; */
+	/* border-bottom: 1px solid #E6E6E6; */
+	color: #666;
+	padding: 20px;
+	text-indent: 10px;
+}
+
+.firstMenu {
+	width: 100%;
+	min-height: 30px;
+	line-height: 30px;
+	/* height:40px; */
+	/* background: url(../../img/role/right.png) no-repeat left top; */
+	border-top: 1px solid #E6E6E6;
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	cursor: pointer;
+	/* background:blue; */
+}
+
+.firstMenu:last-child {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.secondMenu {
+	width: 100%;
+	text-indent: 40px;
+}
+
+.secondMenu li {
+	width: 100%;
+	height: 26px;
+	line-height: 20px;
+	padding-top: 4px;
+	display: none;
+	list-style-position: inside;
+	list-style-type: decimal;
+	/* background:red; */
+}
+	/****************重置 密码后的弹框****************/
+	.resetPass{
+		width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.3);
+	position:fixed;
+	left:0;
+	top:0;
+	z-index: 300!important;
+	display:none;
+	}
+	.passBox{
+		position:relative;
+	left:calc(50% - 150px);
+	top:calc(50% - 65px);
+	width:300px;
+	height:130px;
+	border:1px solid #E6E6E6;
+	background:#fff;
+	}
+	.top{
+		width:100%;
+		height:30px;
+		background:#A0A7B1;
+		text-align: center;
+		line-height: 30px;
+		font-size: 16px;
+		position:relative;
+		
+	}
+.passShow{
+	width:100%;
+	height:100px;
+	/*background:red;*/
+	line-height: 100px;
+	padding-left:30px;
+	box-sizing: border-box;
+	
+}
+.passShow input{
+	display: inline-block;
+	width:180px;
+	height:36px;
+	border-radius: 5px;
+	text-indent: 8px;
+	border:none;
+}
+.close{
+	display:block;
+	width:18px;
+	height:18px;
+	border:1px solid gray;
+	position:absolute;
+	top:6px;
+	right:8px;
+	background-image: url(../../img/role/close.png);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.close:active{
+	opacity:0.6;
+}

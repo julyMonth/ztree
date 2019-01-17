@@ -1,0 +1,74 @@
+{
+    "status": "200",
+    "message": "搜索到用户信息",
+    "data": {
+        "total": 3,
+        "list": [
+            {
+                "uid": 1,
+                "login": "admin",
+                "username": "系统管理员",
+                "status": true,
+                "begin": "2019-01-15 10:49:21",
+                "miss": "2099-01-01 00:00:00",
+                "roleList": [
+                    {
+                        "id": 1,
+                        "name": "管理员",
+                        "description": "系统管理员"
+                    },
+                    {
+                        "id": 2,
+                        "name": "测试角色",
+                        "description": "测试员1"
+                    },
+                    {
+                        "id": 3,
+                        "name": "测试角色2",
+                        "description": "test2"
+                    }
+                ]
+            },
+            {
+                "uid": 2,
+                "login": "user",
+                "username": "用户",
+                "status": false,
+                "begin": "2019-01-15 10:49:59",
+                "miss": "2099-01-01 00:00:00",
+                "roleList": [
+                    {
+                        "id": 1,
+                        "name": "管理员",
+                        "description": "系统管理员"
+                    },
+                    {
+                        "id": 2,
+                        "name": "测试角色",
+                        "description": "测试员1"
+                    }
+                ]
+            },
+            {
+                "uid": 3,
+                "login": "test",
+                "username": "测试员",
+                "status": true,
+                "begin": "2019-01-15 10:50:28",
+                "miss": "2099-01-01 00:00:00",
+                "roleList": [
+                    {
+                        "id": 3,
+                        "name": "测试角色2",
+                        "description": "test2"
+                    }
+                ]
+            }
+        ],
+        "pageNum": 1,
+        "pageSize": 10,
+        "size": 3,
+        "startRow": 1,
+        "endRow": 3
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>allot</title>
+	<link rel="stylesheet" href="../css/rolePermission/rolePermission.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../layui/css/layui.css"  media="all">
+</head>
+<body>
+	<div id="main">
+		<div class="tit">
+			<h1>权限分配</h2>
+		</div>
+		<div class="top">
+			<input class="inp" type="search" placeholder="输入权限名称 / 权限类型">
+			<button class="btn1 btn">查询</button>
+		</div>
+		<div class="bot">
+			<div class="tab">
+				<table class="layui-hide" id="test" lay-filter="test"></table>
+				<script type="text/html" id="barDemo">
+					<a class="layui-btn layui-bg-blue layui-btn-s" style="line-height:30px;" lay-event="edit">权限选择</a>
+				 </script>
+			</div>
+			<div class="bot-btn"></div>
+		</div>		
+	</div>
+	
+	<script src="../js/jquery.js"></script>
+	<script src="../layui/layui.js" charset="utf-8"></script>
+	<script src="../js/indexJs/rolePermission.js"></script>
+</body>
+</html>

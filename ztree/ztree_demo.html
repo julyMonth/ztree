@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="zTreeStyle.css"/>
+		<!--<script type="text/javascript" src="jquery.ztree.all.min.js"></script>-->
+		<script type="text/javascript" src="jquery.ztree.core.js"></script>
+		<script type="text/javascript" src="jquery.ztree.excheck.js"></script>
+		<!--<script type="text/javascript" src="jquery.ztree.exedit.min.js"></script>-->
+		<!--<script type="text/javascript" src="jquery.ztree.exhide.min.js"></script>-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.ajax({
+				type: 'get',
+				url: 'json/treeGirdData.json',
+				success: function(res) {
+					var setting = {
+						async:{
+							enable:true,
+							url:'../json/treeGirdData.json',
+							type: 'get',
+							xhrFields:{
+								data:[]
+							}
+							
+						},
+						check: {
+							enable: true,
+							chkStyle: "checkbox",
+							chkboxType: { "Y": "ps", "N": "ps" }
+						},
+						data: {
+							simpleData: {
+								enable: true
+							}
+						},
+
+				};
+					$.fn.zTree.init($("#treeDemo"), setting, res);
+				}
+			})
+//				$('#checkNodes').click(function(){
+////					debugger  prop
+//					var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+//					var nodes = treeObj.getCheckedNodes(true);
+//					console.log(nodes)	
+//					
+//					$.each(nodes,function(i,v){
+//						console.log(2,i,v)	
+//					})
+////					console.log(3)	
+//				})
+			});
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="content_wrap">
+			<div class="zTreeDemoBackground left">
+				<ul id="treeDemo" class="ztree"></ul>
+				<input type="button" name="checkNodes" id="checkNodes" value="获取选中节点" />
+			</div>
+		</div>
+	</body>
+
+</html>

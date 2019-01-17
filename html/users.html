@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户列表</title>
+		 <link rel="stylesheet" type="text/css" href="../css/reset.css" /> 
+		<link rel="stylesheet" type="text/css" href="../css/role/users.css" />
+		<link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+	</head>
+
+	<body>
+		<!-- 点击delete按钮后的弹框 -->
+		<div id="delRole">
+			<div class="delRoleBox">
+				<p>提示信息</p>
+				<span class="close">x</span>
+				<div class="delBtnBox">
+					<div class="delMsg">
+						确认删除用户信息
+					</div>
+					<div class="delBtn">
+						<button class="delBtnConfirm" data-type="reload">确认</button>
+						<button class="delBtnConcel">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 点击修改按钮的弹框 -->
+		<div class="mask">
+			<div id="mask">
+				<div class="checkBox">
+					<div class="checkTitle">用户信息修改</div>
+					<div class="modifyRoleMsg">
+						<div class="modify">
+							<label>登录名称 : 
+								<input type="text" class="modifyName" required />
+							</label>
+							<label class="gap ">用户昵称 : 
+								<input type="text" class="modifyDes" required/>
+							</label>
+							<label class="gap ">状态 : 
+								<!--<input type="text" class="modifyStatus" required/>''-->
+								<select name="modifyStatus" class="modifyStatus">
+									<option value=false>禁用</option>
+									<option value=true >可用</option>
+								</select>
+							</label>
+							<input type="text" id="uid" />
+						</div>
+					</div>
+					<div class="tips">
+							<span class="tipName">*请输入用户名称</span>
+							<span class="tipDes">*请输入用户描述</span>
+						</div>
+					<div class="title">
+						<div class="titleLeft">未拥有的角色</div>
+						<div class="titleRight">已拥有的角色</div>
+					</div>
+					<div class="checkLine">
+						<div class="checkLeft">
+							<!--选择权限弹框左侧框-->
+							<select id="select1" multiple="multiple">
+								<!-- <option id="1">是滴是滴</option>
+								<option id="2">而发生</option>
+								<option id="3">特通过第三方</option> -->
+							</select>
+						</div>
+						<div class="ckeckCenter">
+							<!--选择权限弹框中间框-->
+							<button class="singleRight">></button>
+							<button class="singleLeft"><</button> 
+							<button class="allRight">>></button>
+							<button class="allLeft"><<</button>
+						</div> 
+						<div class="checkRight">
+							
+						    <!--选择权限弹框右侧框-->
+							<select id="select2" multiple="multiple">
+								<!-- <option id="4">广东省高速地方</option>
+								<option id="5">范德萨发刚收到</option>
+								<option id="6">倒萨大师</option> -->
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="btns">
+					<button class="confirm">确认</button>
+					<button class="cancel">取消</button>
+				</div>
+			</div>
+		</div>
+		<!-- 点击列表后显示已拥有的角色---框 -->
+		<div class="belongs">
+			 <div class="bTitle">已拥有的角色</div>
+			 <div class="bList">
+				 <ul class="allMenu">
+				 	<!-- <li>测试组2</li>
+					<li>管理员1组</li> -->
+				 </ul>
+			 </div>
+		</div>
+
+		<!-- 显示的表 -->
+		<div id="roleBox">
+			<h2>用户列表</h2>
+			<div id="roleSearch">
+				<div class="roleTop">
+					<input type="search" placeholder="输入用户昵称/用户账号" class="search" id="search" />
+					<button class="roleSearch" data-type="reload">查询</button>
+					<button class="addRole">用户增加</button>
+					<button class="delRole">Delect</button>
+				</div>
+				<div class="roleTable">
+					<table class="layui-hide" id="test" lay-filter="test"></table>
+				</div>
+			</div>
+		</div>
+		<!-- 点击新增用户的弹框 -->
+		<div class="addRoleFrame">
+			<div class="frame">
+				<div class="addRoleTitle">新增用户</div>
+				<div class="name">
+					<label> 登录名称 : <input type="text" required /></label>
+					<span>登录名为空</span>
+				</div>
+				<div class="description common">
+					<label>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称 : <input type="text" required/></label>
+					<span>昵称为空</span>
+				</div>
+				<div class="firstPass common">
+					<label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码 : <input type="password" id="firstPass" /></label>
+					<span>密码为空</span>
+				</div>
+				<div class="lastPass common">
+					<label>确认密码 : <input type="password" id="lastPass" /></label>
+					<span>密码为空</span>
+				</div>
+				<div class="addBtn">
+						<button type="button" class="addConfirm" data-type="reload">确认</button>
+						<button type="button" class="addCancel">取消</button>
+				</div>
+			</div>
+		</div>
+		<!--点击重置密码成功后，将密码显示出来-->
+		<div class="resetPass">
+			<div class="passBox">
+				<div class="top">
+					重置密码
+					<span class="close"></span>
+				</div>
+				<div class="passShow">
+					新密码：
+					<input type="text" class="newPass" value="464613131" disabled=""/>
+				</div>
+				<!--<div class="btn">
+					<button>确定</button>
+				</div>-->
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../layui/layui.js"></script>
+	<script type="text/html" id="barDemo">
+		<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="modify">修改</a>
+		<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="reset">重置密码</a>
+	</script>
+	<script type="text/javascript" src="../js/role/users.js"></script>
+
+</html>

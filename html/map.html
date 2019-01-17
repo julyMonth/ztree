@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地图展示</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/map/map.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_980538_7wff8l3vuvw.css">
+</head>
+
+<body>
+    <div id="map" class="map" style="float:left"></div>
+	<!-- 返回 -->
+	<!-- <div class="btn_out"><i class="iconfont icon-youjiantou btn_out_i"></i></div> -->
+    <div id="mapRight">
+        <ul class="rightlist">
+            <span class="rightlist_blank" ></span>
+            <div class="right_title">
+                <p>维护人员</p>
+                <i class="online"></i>/<i class="total"></i>人    
+            </div>
+            <div id="online" style="width:100%">
+            	
+            </div>
+            <div id="offline" style="width:100%">
+            	
+            </div>
+            <!--<li>
+                <div class="online_name">
+                    <i class="online_yuan"></i>陈琳<span>在线</span>
+                </div>
+                <div class="online_phone">
+                	<p>13444444444</p><span>维护二组</span>
+                </div>
+            </li>
+            <li>
+                <div class="offline_name">
+                    <i class="offline_yuan"></i>陈琳<span>离线</span>
+                </div>
+                <div class="online_phone">
+                	<p>13415646544</p><span>维护二组</span>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+</body>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin="">
+</script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="../js/indexJs/map.js"></script>
+</html>

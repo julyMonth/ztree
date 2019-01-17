@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>角色分配</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/role/casting.css"/>
+		<link rel="stylesheet" type="text/css" href="../layui/css/layui.css"/>
+	</head>
+	<body>
+		<div id="delRole">
+			<div class="delRoleBox">
+				<p>提示信息</p>
+				<span class="close">x</span>
+				<div class="delBtnBox">
+					<div class="delMsg">
+						确认删除角色信息
+					</div>
+					<div class="delBtn">
+						<button class="delBtnConfirm" data-type="reload">确认</button>
+						<!--<button style="display:none"></button>-->
+					    <button class="delBtnConcel">取消</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="mask" style="display:none">
+			<div id="mask">
+				<div class="checkBox">
+				   <div class="checkTitle">请选择角色</div>
+				   <div class="checkLine">
+					   <label><input name="role" type="checkbox" id="0" />苹果 </label> 
+					   <label><input name="role" type="checkbox" id="1" />桃子 </label> 
+					   <label><input name="role" type="checkbox" id="2" />系统管理员 </label> 
+					   <label><input name="role" type="checkbox" id="3" />系统管理员与</label> 
+					   <label><input name="role" type="checkbox" id="4" />系统管理员 </label> 
+					   <label><input name="role" type="checkbox" id="5" />系统管理员</label>
+					   <label><input name="role" type="checkbox" id="6" />苹果 </label> 
+					   <label><input name="role" type="checkbox" id="7" />桃子 </label> 
+					   <label><input name="role" type="checkbox" id="8" />系统管理员 </label> 
+					   <label><input name="role" type="checkbox" id="9" />系统管理员与</label>
+					   <label><input name="role" type="checkbox" id="10" />苹果 </label> 
+					   
+				   </div>
+			       
+			    <div class="btns">
+			    	<button class="confirm">确认</button>
+			    	<button class="cancel">取消</button>
+			    </div>
+			  </div>
+			</div>
+			</div>
+		<div id="roleBox">
+			
+			<h2>用户角色分配</h2>
+			<div id="roleSearch">
+				<div class="roleTop" >
+					<input type="search" placeholder="输入用户昵称/用户账号" class="search" id="search" />
+					<button class="roleSearch"  data-type="reload">查询</button>
+					<button class="delRole" >清空用户角色</button>	
+					<button class="addRole">增加角色</button>
+					<button class="delRole" >Delect</button>	
+					 <!--<button class="layui-btn" data-type="getCheckData">获取选中行数据</button>-->
+				</div>
+				<div class="roleTable">
+					<table class="layui-hide" id="test" lay-filter="test" ></table>
+				</div>
+				
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../layui/layui.js"></script>
+    <script type="text/html" id="barDemo">
+		  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">选择角色</a>
+	</script>
+    <script type="text/javascript" src="../js/role/casting.js"></script>
+</html>

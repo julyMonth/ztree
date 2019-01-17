@@ -1,0 +1,93 @@
+{
+    "status": "200",
+    "message": "搜索到权限信息",
+    "data": {
+        "total": 14,
+        "list": [
+            {
+                "id": 1,	
+                "permissionUrl": "/search",
+                "permissionDesc": "用户查询",
+                "pageUrl": "/user",
+                "pageDesc": "用户列表"
+            },
+            {
+                "id": 2,
+                "permissionUrl": "/add",
+                "permissionDesc": "新增用户",
+                "pageUrl": "/user",
+                "pageDesc": "用户列表"
+            },
+            {
+                "id": 3,
+                "permissionUrl": "/delete",
+                "permissionDesc": "用户删除",
+                "pageUrl": "/user",
+                "pageDesc": "用户列表"
+            },
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            },
+			
+            {
+                "id": 4,
+                "permissionUrl": "/search",
+                "permissionDesc": "角色查询",
+                "pageUrl": "/role",
+                "pageDesc": "角色列表"
+            }
+        ]
+    }
+}

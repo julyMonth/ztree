@@ -1,0 +1,17 @@
+{
+	"list": [
+		{
+			"department": "A单",
+			"num": 600
+		}, {
+			"department": "B单",
+			"num": 380
+		}, {
+			"department": "C单",
+			"num": 366
+		}, {
+			"department": "D单",
+			"num": 320
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+	"status": "200",
+	"message": "搜索到所有权限信息",
+	"data": [
+		{
+			"id": 2,
+			"name": "用户列表",
+			"children": [
+				{
+					"id": 1,
+					"pid": null,
+					"name": "查询",
+					"description": null
+				}, {
+					"id": 2,
+					"pid": null,
+					"name": "新增",
+					"description": null
+				}, {
+					"id": 3,
+					"pid": null,
+					"name": "删除",
+					"description": null
+				}, {
+					"id": 4,
+					"pid": null,
+					"name": "修改",
+					"description": null
+				}, {
+					"id": 5,
+					"pid": null,
+					"name": "显示所有角色",
+					"description": null
+				}, {
+					"id": 6,
+					"pid": null,
+					"name": "重置密码",
+					"description": null
+				}, {
+					"id": 4,
+					"pid": null,
+					"name": "修改",
+					"description": null
+				}, {
+					"id": 5,
+					"pid": null,
+					"name": "显示所有角色",
+					"description": null
+				}, {
+					"id": 6,
+					"pid": null,
+					"name": "重置密码",
+					"description": null
+				}
+			]
+		},
+		{
+			"id": 0,
+			"name": "角色列表",
+			"children": [
+				{
+					"id": 7,
+					"pid": null,
+					"name": "查询",
+					"description": null
+				}, {
+					"id": 8,
+					"pid": null,
+					"name": "新增",
+					"description": null
+				}, {
+					"id": 9,
+					"pid": null,
+					"name": "删除",
+					"description": null
+				}, {
+					"id": 10,
+					"pid": null,
+					"name": "修改",
+					"description": null
+				}, {
+					"id": 11,
+					"pid": null,
+					"name": "显示所有角色",
+					"description": null
+				}, {
+					"id": 12,
+					"pid": null,
+					"name": "重置密码",
+					"description": null
+				}, {
+					"id": 10,
+					"pid": null,
+					"name": "修改",
+					"description": null
+				}, {
+					"id": 11,
+					"pid": null,
+					"name": "显示所有角色",
+					"description": null
+				}, {
+					"id": 12,
+					"pid": null,
+					"name": "重置密码",
+					"description": null
+				}
+			]
+		}
+	]
+}

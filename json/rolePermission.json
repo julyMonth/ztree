@@ -1,0 +1,32 @@
+{
+    "status": "200",
+    "message": "搜索到角色权限信息",
+    "data": {
+        "total": 3,
+		"pageNum": 1,
+        "list": [
+            {
+                "id": 1,
+                "roleName": "系统管理员",
+                "roleType": "管理员组",
+                "permissionName": "用户查询,用户删除,角色查询,角色删除,新增权限,权限删除,权限删除,角色权限查询,角色权限分配",
+                "permissionId": "1,3,4,6,11,12,12,13,14"
+            },
+            {
+                "id": 2,
+                "roleName": "测试员1",
+                "roleType": "测试组",
+                "permissionName": "新增用户,用户删除,角色查询,新增角色",
+                "permissionId": "2,3,4,5"
+            },
+            {
+                "id": 3,
+                "roleName": "test2",
+                "roleType": "测试组",
+                "permissionName": "用户查询",
+                "permissionId": "1"
+            }
+        ]
+        
+    }
+}

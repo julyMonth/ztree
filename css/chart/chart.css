@@ -1,0 +1,107 @@
+html,body{
+	min-height: 860px;
+    min-width: 1620px;
+}
+#chartBox{
+	width:calc(100 - 30px);
+	height:100%;
+	/*min-height: 870px;*/
+	padding-left:30px;
+	background:#C9D4E8;
+	overflow: auto;
+}
+#chartTop{
+	width:100%;
+	height:60px;
+	padding:15px 0 15px 20px;
+	box-sizing: border-box;
+}
+.chartTit{
+    margin: 0;
+    width: calc(100% - 10px);
+    height: 36px;
+    text-indent: 16px;
+    margin-left: 10px;
+    background: url(../../img/count/left_yellow.png) no-repeat left center;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.layui-form-item{
+	border:1px solid #696969;
+	outline: none;
+}
+.search{
+	position: absolute;
+    left: 445px;
+    top: 15px;
+    height: 36px;
+    width: 80px;
+    border: 1px solid #696767;
+    background:#fff;
+    outline: none;
+    border-radius:5px;
+}
+.search:active{
+	background:#E6E6E6;
+	}
+#chart_con{
+	width:100%;
+	height:calc(100% - 60px);
+	overflow: hidden;
+	/*background:red;*/
+}
+.chart_left{
+	float:left;
+	width:760px;
+	height:100%;
+}
+.table-bordered th{
+	background:#5C6F8D;
+	text-align:center;
+	color:#fff;
+}
+.table-bordered td{
+    text-align:center;
+    background:#fff;	
+}
+#tabletest{
+	border:1px solid #D8DBE6;
+}
+#demo{
+	background:#fff!important;
+}
+.layui-form{
+	background:#E8EBF0;
+}
+
+/*echarts*/
+.chart_right{
+	/*width:900px;*/
+	width:calc(100% - 660px);
+	min-width:960px;
+	height:760px;
+	/*margin-left:20px;*/
+	/*float:left;*/
+	/*background:red;*/
+	position:absolute;
+	left:640px;
+	top:80px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.chart_pie{
+	height:60%;
+	width:100%;
+	/*background:pink;*/
+}
+.chart_line{
+	height:40%;
+	width:100%;
+	background:#FFEBC8;
+	/*background:blue;*/
+}
+#firstPieChart{
+	background:#FFEBC8;
+	margin:0 auto;
+	height:100%;
+}

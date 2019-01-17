@@ -1,0 +1,474 @@
+#roleListBox {
+	width: 100%;
+	height: 100%;
+	min-width: 1600px;
+	/*background:gray;*/
+	padding: 0 240px 0 160px;
+	box-sizing: border-box;
+}
+
+h2 {
+	width: 100%;
+	height: 80px;
+	/*background:blue;*/
+	font-size: 26px;
+	line-height: 80px;
+	border-bottom: 1px solid #EFEFEF;
+	box-sizing: border-box;
+}
+
+#roleListSearch {
+	width: 100%;
+	height: calc(100% - 81px);
+	/*background:#DFF0D8;*/
+}
+
+.roleListTop {
+	width: 100%;
+	height: 80px;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+
+.topSearch {
+	height: 40px;
+	width: 200px;
+	border-radius: 5px;
+	padding: 0 10px;
+	border: 1px solid #CDCCCE;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.topRoleSearch {
+	background: #327AB7;
+	display: inline-block;
+	height: 40px;
+	width: 60px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.topDelRole {
+	background: #D9524E;
+	display: inline-block;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+}
+
+.topAddRole {
+	background: #5CB95C;
+	display: inline-block;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+}
+
+.roleListTable {
+	width: 100%;
+	height: calc(100% - 80px);
+}
+
+/**********************点击delect按钮后的弹框**********************/
+#addMask {
+	width: 100%;
+	height: 100%;
+	background: rgba(40, 43, 51, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 300 !important;
+	display: none;
+}
+
+.addMaskBox {
+	width: 300px;
+	height: 180px;
+	position: absolute;
+	top: calc(50% - 90px);
+	left: calc(50% - 150px);
+	color: black;
+}
+
+#addMask p {
+	height: 30px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	background: #EAE5E5;
+
+}
+
+#addMask span {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border: 1px solid lightgray;
+	cursor: pointer;
+}
+
+.delMsg {
+	width: calc(100% - 60px);
+	height: 70px;
+	padding: 20px 30px;
+	font-size: 16px;
+	background: #fff;
+}
+
+.delBtn {
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	border-top: 1px solid #EAE5E5;
+}
+
+.delBtn button {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	margin: 3px 10px;
+	color: #fff;
+
+}
+
+.delBtnConfirm {
+	background: #1E9FFF;
+	cursor: pointer;
+}
+
+.delBtnConcel {
+	background: lightslategray;
+	cursor: pointer;
+}
+
+/********************** 点击新增用户后的弹框 **********************/
+.addNewRole {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 300 !important;
+	display: none;
+}
+
+.roleFrame {
+	position: relative;
+	left: calc(50% - 200px);
+	top: calc(50% - 145px);
+	width: 400px;
+	height: 290px;
+	border: 1px solid #E6E6E6;
+	background: #fff;
+
+}
+
+.roleFrame>div {
+	width: 100%;
+}
+
+.roleTitle {
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bolder;
+	background-color: #F2F2F2;
+}
+
+.roleName {
+	height: 80px;
+	line-height: 40px;
+	padding: 20px 40px 0 50px;
+	/* background:red; */
+	box-sizing: border-box;
+	position: relative;
+}
+
+.roleDescription {
+	height: 80px;
+	line-height: 40px;
+	padding: 20px 40px 0 50px;
+	/* background:red; */
+	box-sizing: border-box;
+	position: relative;
+}
+
+.roleName label,
+.roleDescription label {
+	display: inline-block;
+	height: 40px;
+	width: 100%;
+	font-size: 14px;
+}
+
+.roleName input,
+.roleDescription input {
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid dimgray;
+	padding: 0 8px;
+}
+
+.roleName span {
+	height: 20px;
+	position: absolute;
+	bottom: 10px;
+	right: 65px;
+	color: red;
+	display: none;
+}
+
+.roleDescription span {
+	height: 20px;
+	position: absolute;
+	bottom: 10px;
+	right: 65px;
+	color: red;
+	display: none;
+}
+
+.addNewRoleBtn {
+	height: 70px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.addNewRoleBtn button {
+	display: inline-block;
+	width: 60px;
+	height: 36px;
+	margin: 0 15px;
+	outline: none;
+	border: 1px solid #DEDEDE
+}
+
+.addNewRoleBtn button:active {
+	opacity: .8;
+}
+
+.newRoleConfirm {
+	background: #1E9FFF;
+	color: #fff;
+}
+
+/* 点击列表后出现的已拥有权限框 */
+.roleBelongs {
+	width: 398px;
+	height: 658px;
+	position: absolute;
+	left: 840px;
+	top: 160px;
+	/* background:red; */
+	border: 1px solid #E6E6E6;
+	display: none;
+}
+
+.rTitle {
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	color: #666666;
+	background: #F2F2F2;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.rList {
+	width: 100%;
+	height: 620px;
+}
+
+.allMenu {
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	list-style-type: none;
+	overflow: auto;
+	/* counter-reset:sectioncounter; */
+	/* border-bottom: 1px solid #E6E6E6; */
+	color: #666;
+	padding: 20px;
+	text-indent: 10px;
+}
+
+.firstMenu {
+	width: 100%;
+	min-height: 30px;
+	line-height: 30px;
+	/* height:40px; */
+	border-top: 1px solid #E6E6E6;
+	list-style-type: upper-roman;
+	/*list-style:url(../../img/role/close.png) 100% 100% inside;*/
+	list-style-position: inside;
+	cursor: pointer;
+}
+
+.firstMenu:last-child {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.secondMenu {
+	width: 100%;
+	text-indent: 40px;
+}
+
+.secondMenu li {
+	width: 100%;
+	height: 26px;
+	line-height: 20px;
+	padding-top: 4px;
+	display: none;
+	list-style-position: inside;
+	list-style-type: decimal;
+	/* border:1px solid #ddd; */
+}
+
+/********************** 点击修改按钮的弹框 **********************/
+.modifyRoleBox {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	z-index: 200 !important;
+	display: none;
+	left:0;
+	top:0;
+}
+
+.mask {
+	position: relative;
+	left: calc(50% - 400px);
+	top: calc(50% - 300px);
+	width: 800px;
+	height: 663px;
+	border: 1px solid #E6E6E6;
+}
+.modifyTopBox{
+	background:#fff;
+	}
+	/*弹框的标题*/
+.modifyTopTitle{
+	height:40px;
+	width:100%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bolder;
+	background:#F8F8F8;
+	border-bottom:1px solid #EEEEEE;
+}
+/*弹框中的input框*/
+.topRoleMsg{
+	height:60px;
+	width:100%;
+	/*background: red;*/
+	box-sizing: border-box;
+}
+.modifyMsg{
+	height:60px;
+	line-height: 40px;
+	padding:18px 40px 0 60px;
+	/* background:red; */
+	box-sizing: border-box;
+	position:relative;
+}
+.modifyMsg label{
+	display:inline-block;
+	height:40px;
+	width:300px;
+	font-size: 14px;
+}
+.modifyMsg input{
+	display:inline-block;
+	width:200px;
+	height:30px;
+	border-radius: 5px;
+	border:1px solid dimgray;
+	padding:0 8px;
+}
+#rid{
+	display:none;
+}
+.gap{
+	margin-left:80px;
+}
+.tips{
+	height:20px;
+	width:100%;
+	/*background:pink;*/
+	position: relative;
+}
+.tips span{
+	font-size: 12px;
+	position:absolute;
+	color:red;
+}
+.tipName{
+	left:268px;
+	top:0;
+	/*background:green;*/
+	display: none;
+}
+.tipDes{
+	right:70px;
+	top:0;
+	/*background:blue;*/
+	display: none;
+}
+.roleBox{
+	width:100%;
+	height:492px;
+	/*background:red;*/
+	padding:20px 50px;
+	box-sizing: border-box;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+#demo{
+	width:100%;
+	height:100%;
+	overflow: auto;
+}
+.btns{
+	width:100%;
+	height:50px;
+	padding:10px 30px;
+	box-sizing: border-box;
+	background:#fff;
+	text-align: right;
+}
+.btns button{
+	display: inline-block;
+	width:56px;
+	height:30px;
+	border-radius: 2px;
+    font-weight: 400;
+	outline: none;
+}
+.confirm{
+    border:none;
+    background:#1E9FFF;
+    color:#fff;
+    margin-right:10px;
+}
+.confirm:hover{
+    opacity: .9;
+    }
+.cancel{
+    border:1px solid #DEDEDE;
+    background:#fff;
+}

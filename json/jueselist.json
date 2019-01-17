@@ -1,0 +1,31 @@
+{
+    "status": "200",
+    "message": "搜索到角色信息",
+    "data": [
+            {
+                "id": 1,
+                "name": "管理员组1",
+                "description": "系统管理员"
+            },
+            {
+                "id": 2,
+                "name": "测试组2",
+                "description": "测试员1"
+            },
+            {
+                "id": 3,
+                "name": "测试组3",
+                "description": "test2"
+            },
+			{
+				"id": 4,
+				"name": "管理员4",
+				"description": "系统管理员"
+			},
+			{
+				"id": 5,
+				"name": "测试组5",
+				"description": "测试员1"
+			}
+        ]
+}

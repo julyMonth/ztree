@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/chart/chart.css"/>
+  <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+  <!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+  <title>Document</title>
+</head>
+<body>
+   <div id="chartBox">
+ 	  <div id="chartTop">
+			 	<h2 class="chartTit">月工单统计
+				      <select name="city" lay-verify="required" class="layui-form-item layui-input-block">
+				      	<option value="2017">2017</option>
+				      	<option value="2018">2018</option>
+				        <option value="2019">2019</option>
+				        <option value="2020">2020</option>
+				        <option value="2021">2021</option>
+				        <option value="2022">2022</option>
+				        <option value="2022">2023</option>
+				        <option value="2022">2024</option>
+				        <option value="2022">2025</option>
+				      </select>
+			 	</h2>
+			 	<button class="search">搜索</button>
+ 	  </div>
+ 	  <div id="chart_con">
+ 	  	<div class="chart_left">
+					 <table id="demo" lay-filter="test"></table> 
+ 	  	</div>
+ 	  	<div class="chart_right">	
+ 	  			<div class="chart_pie">
+							<div style="width: 100%; height: 400px;" id="firstPieChart"></div> 	  				
+ 	  			</div>
+ 	  			<div class="chart_line">
+ 	  				
+ 	  			</div>
+ 	  	</div>
+ 	  </div>
+ </div>
+</body>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/echarts.common.min.js"></script>
+<script type="text/javascript" src="../layui/layui.js"></script>
+<!-- <script type="text/javascript" src="../js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="../js/indexJs/chart.js"></script>
+</html>
